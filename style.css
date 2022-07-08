@@ -2,25 +2,43 @@
   --primary: #224c8d;
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  .toolbar {
+    grid-template-columns: auto 1fr auto !important;
+    grid-template-areas: "logo search tools" !important;
+    gap: 1em;
+    place-items: center;
+  }
+  .toolbar #tools {
+    display: flex !important;
+  }
+  .toolbar #navToggler {
+    display: none !important;
+  }
+}
 .toolbar {
   background-color: var(--primary);
   display: grid;
-  gap: 1em;
-  grid-template-columns: auto 2fr auto;
-  place-items: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "logo navToggler" "search search";
+  padding: 1em;
 }
-.toolbar form {
+.toolbar img#logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  grid-auto-flow: logo;
+}
+.toolbar form#search {
   width: 100%;
   align-items: center;
   display: flex;
   height: 2.5em;
+  grid-area: search;
 }
-.toolbar form select,
-.toolbar form input {
+.toolbar form#search select,
+.toolbar form#search input {
   border: none;
   border-radius: 0;
   height: inherit;
@@ -28,18 +46,18 @@
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
-.toolbar form #catergory {
+.toolbar form#search #catergory {
   border-radius: 100vmax 0 0 100vmax;
   background-color: white;
   font-family: sans-serif;
 }
-.toolbar form #catergory:hover {
+.toolbar form#search #catergory:hover {
   cursor: pointer;
 }
-.toolbar form #search-box {
+.toolbar form#search #search-box {
   width: 100%;
 }
-.toolbar form #search-btn {
+.toolbar form#search #search-btn {
   border: none;
   border-radius: 0 100vmax 100vmax 0;
   background-color: white;
@@ -50,7 +68,7 @@
   width: -moz-fit-content;
   width: fit-content;
 }
-.toolbar form #search-btn svg {
+.toolbar form#search #search-btn svg {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -58,39 +76,39 @@
   fill: var(--primary);
   padding: 0.5em;
 }
-.toolbar form #search-btn:hover {
+.toolbar form#search #search-btn:hover {
   cursor: pointer;
 }
-.toolbar form #search-btn:hover svg:hover {
+.toolbar form#search #search-btn:hover svg:hover {
   fill: cornflowerblue;
 }
-.toolbar .tools {
+.toolbar #tools {
   align-items: center;
-  display: flex;
+  display: none;
   gap: 0.5em;
   height: 2.5em;
 }
-.toolbar .tools #account {
+.toolbar #tools #account {
   border: none;
   background-color: transparent;
   color: white;
   display: flex;
   gap: 0.5em;
 }
-.toolbar .tools #account svg {
+.toolbar #tools #account svg {
   max-width: 25px;
   height: inherit;
 }
-.toolbar .tools #account label {
+.toolbar #tools #account label {
   cursor: pointer;
 }
-.toolbar .tools #account:hover,
-.toolbar .tools #cart:hover {
+.toolbar #tools #account:hover,
+.toolbar #tools #cart:hover {
   background-color: white;
   cursor: pointer;
   color: black;
 }
-.toolbar .tools .btn {
+.toolbar #tools .btn {
   align-items: center;
   display: flex;
   width: -webkit-fit-content;
@@ -106,7 +124,33 @@
   padding-right: 1em;
   text-decoration: none;
 }
+.toolbar #navToggler {
+  color: white;
+  display: block;
+  margin: auto;
+  grid-area: navToggler;
+}
+.toolbar #navToggler svg {
+  width: 2em;
+  height: 2em;
+}
+.toolbar #navToggler:hover {
+  cursor: pointer;
+  color: cornflowerblue;
+}
 
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  .navbar {
+    display: flex;
+  }
+  .navbar ul#nav {
+    align-items: center;
+    display: flex !important;
+  }
+  .navbar ul#nav a {
+    padding: 0 !important;
+  }
+}
 .navbar {
   width: 100%;
   align-items: center;
@@ -115,9 +159,7 @@
   justify-content: center;
 }
 .navbar ul#nav {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
   padding: 0;
   margin: 0.5em;
 }
@@ -134,6 +176,7 @@
   width: -moz-max-content;
   width: max-content;
   text-decoration: none;
+  padding: 1em;
 }
 
 .pre-loader {

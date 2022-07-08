@@ -1,19 +1,44 @@
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+    .toolbar {
+        grid-template-columns: auto 1fr auto !important;
+        grid-template-areas:
+            "logo search tools" !important;
+        gap: 1em;
+        place-items: center;
+
+
+        #tools {
+            display: flex !important;
+        }
+
+        #navToggler {
+            display: none !important;
+        }
+    }
+}
+
 .toolbar {
     background-color: var(--primary);
     display: grid;
-    gap: 1em;
-    grid-template-columns: auto 2fr auto;
-    place-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "logo navToggler"
+        "search search"
+    ;
+    padding: 1em;
 
-    form {
+    img#logo {
+        width: fit-content;
+        display: block;
+        grid-auto-flow: logo;
+    }
+
+    form#search {
         width: 100%;
         align-items: center;
         display: flex;
         height: 2.5em;
+        grid-area: search;
 
         select,
         input {
@@ -65,12 +90,11 @@
         }
     }
 
-    .tools {
+    #tools {
         align-items: center;
-        display: flex;
+        display: none;
         gap: .5em;
         height: 2.5em;
-
 
         #account {
             border: none;
@@ -113,6 +137,39 @@
 
 
     }
+
+    #navToggler {
+        color: white;
+        display: block;
+        margin: auto;
+        grid-area: navToggler;
+
+        svg {
+            width: 2em;
+            height: 2em;
+        }
+    }
+
+    #navToggler:hover {
+        cursor: pointer;
+        color: cornflowerblue;
+    }
+}
+
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+    .navbar {
+        display: flex;
+
+        ul#nav {
+            align-items: center;
+            display: flex !important;
+
+            a {
+                padding: 0 !important;
+            }
+
+        }
+    }
 }
 
 .navbar {
@@ -123,9 +180,7 @@
     justify-content: center;
 
     ul#nav {
-        align-items: center;
-        display: flex;
-        flex-wrap: wrap;
+        display: none;
         padding: 0;
         margin: .5em;
 
@@ -141,6 +196,7 @@
             font-family: sans-serif;
             width: max-content;
             text-decoration: none;
+            padding: 1em;
         }
     }
 }
