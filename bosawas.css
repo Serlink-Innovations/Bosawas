@@ -27,12 +27,12 @@
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.product span.product__buttons {
+.product div.product__buttons {
   width: 100%;
   display: flex;
   gap: 1em;
 }
-.product span.product__buttons a.btn {
+.product div.product__buttons a.btn {
   width: 100%;
   align-items: center;
   background-color: var(--primary);
@@ -47,7 +47,7 @@
   padding-bottom: 0.5em;
   text-decoration: none;
 }
-.product span.product__buttons a.btn:hover {
+.product div.product__buttons a.btn:hover {
   background-color: cornflowerblue;
   color: white;
   font-weight: 600;
