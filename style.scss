@@ -84,7 +84,7 @@ select {
     display: block;
     font-family: sans-serif;
     font-weight: 100;
-    font-size: clamp(1em, 10vw, 2em);
+    font-size: clamp(1em, 10vw, 1.5em);
 }
 
 .hero {
@@ -216,6 +216,119 @@ section.popular-products {
     padding-right: 2em;
 
     div.popular {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1em;
+    }
+}
+
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+
+    section.collections {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-areas:
+            "left-top center right-top"
+            "left-bottom center right-bottom";
+
+        .collection-item {
+            width: 100%;
+            height: 25vh !important;
+            flex-direction: column;
+        }
+
+        #center {
+            min-height: 100% !important;
+        }
+
+    }
+}
+
+section.collections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .collection-item {
+        width: 100%;
+        height: 15vh;
+        align-items: center;
+        background-color: var(--primary);
+        border-radius: .5em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        label {
+            color: white;
+            font-family: sans-serif;
+        }
+    }
+
+    #left-top {
+        grid-area: left-top;
+    }
+
+    #left-bottom {
+        grid-area: left-bottom;
+    }
+
+    #center {
+        grid-area: center;
+        max-height: 100%;
+    }
+
+    #right-top {
+        grid-area: right-top;
+    }
+
+    #right-bottom {
+        grid-area: right-bottom;
+    }
+}
+
+section.product-catergories {
+    display: block;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1em;
+    }
+
+    #product-catergories__item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 6em;
+            height: 6em;
+            background-color: var(--primary);
+            border: .4em solid cornflowerblue;
+            border-radius: 100vmax;
+        }
+
+        label {
+            display: block;
+            font-family: sans-serif;
+            padding-top: .4em;
+            padding-bottom: .4em;
+        }
+    }
+}
+
+section.best-sellers-products {
+    display: block;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    div.best-sellers {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1em;

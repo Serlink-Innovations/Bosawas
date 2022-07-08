@@ -328,7 +328,7 @@ select {
   display: block;
   font-family: sans-serif;
   font-weight: 100;
-  font-size: clamp(1em, 10vw, 2em);
+  font-size: clamp(1em, 10vw, 1.5em);
 }
 
 .hero {
@@ -444,6 +444,100 @@ section.popular-products {
   padding-right: 2em;
 }
 section.popular-products div.popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+@media only screen and (min-width: 600px) and (min-width: 768px) and (min-width: 998px) {
+  section.collections {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: "left-top center right-top" "left-bottom center right-bottom";
+  }
+  section.collections .collection-item {
+    width: 100%;
+    height: 25vh !important;
+    flex-direction: column;
+  }
+  section.collections #center {
+    min-height: 100% !important;
+  }
+}
+section.collections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+section.collections .collection-item {
+  width: 100%;
+  height: 15vh;
+  align-items: center;
+  background-color: var(--primary);
+  border-radius: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section.collections .collection-item label {
+  color: white;
+  font-family: sans-serif;
+}
+section.collections #left-top {
+  grid-area: left-top;
+}
+section.collections #left-bottom {
+  grid-area: left-bottom;
+}
+section.collections #center {
+  grid-area: center;
+  max-height: 100%;
+}
+section.collections #right-top {
+  grid-area: right-top;
+}
+section.collections #right-bottom {
+  grid-area: right-bottom;
+}
+
+section.product-catergories {
+  display: block;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+section.product-catergories .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+section.product-catergories #product-catergories__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+section.product-catergories #product-catergories__item img {
+  width: 6em;
+  height: 6em;
+  background-color: var(--primary);
+  border: 0.4em solid cornflowerblue;
+  border-radius: 100vmax;
+}
+section.product-catergories #product-catergories__item label {
+  display: block;
+  font-family: sans-serif;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+}
+
+section.best-sellers-products {
+  display: block;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+section.best-sellers-products div.best-sellers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1em;
