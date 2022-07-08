@@ -21,7 +21,10 @@
   display: grid;
   grid-template-columns: 1fr auto;
   grid-template-areas: "logo navToggler" "search search";
-  padding: 1em;
+  padding-top: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
 }
 .toolbar img#logo {
   width: -webkit-fit-content;
@@ -126,8 +129,9 @@
 }
 .toolbar #navToggler {
   color: white;
-  display: block;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   grid-area: navToggler;
 }
 .toolbar #navToggler svg {
