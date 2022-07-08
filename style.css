@@ -440,7 +440,8 @@ section.qualities div.quality {
 
 section.popular-products {
   display: block;
-  padding: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 section.popular-products div.popular {
   display: grid;

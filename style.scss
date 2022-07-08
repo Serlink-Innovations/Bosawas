@@ -212,7 +212,8 @@ section.qualities {
 
 section.popular-products {
     display: block;
-    padding: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
 
     div.popular {
         display: grid;
