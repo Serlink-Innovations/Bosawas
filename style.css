@@ -324,6 +324,13 @@ select {
   min-height: 100vh !important;
 }
 
+.display {
+  display: block;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: clamp(1em, 10vw, 2em);
+}
+
 .hero {
   display: block;
 }
@@ -429,4 +436,14 @@ section.qualities div.quality {
   display: flex;
   flex-direction: column;
   padding: 1em;
+}
+
+section.popular-products {
+  display: block;
+  padding: 2em;
+}
+section.popular-products div.popular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
 }/*# sourceMappingURL=style.css.map */
