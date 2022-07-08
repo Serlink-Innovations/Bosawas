@@ -88,7 +88,7 @@ select {
 
         .heroSlider {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
             //grid-template-columns: repeat(4, auto);
             padding: 2em;
             place-items: center;
@@ -176,5 +176,28 @@ select {
 
     div#slide-2 {
         background-color: coral;
+    }
+}
+
+section.qualities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    font-size: clamp(.6em, 5vw, 1em);
+    font-family: sans-serif;
+    gap: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0;
+    padding-bottom: 0;
+    place-items: center;
+
+    div.quality {
+        width: 100%;
+        align-items: center;
+        background-color: cornflowerblue;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
     }
 }
