@@ -9,11 +9,9 @@
   <title>Boswas - Shopping made easy</title>
 
 
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.17e50649.svg" />
-  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
 
-  <script type="module" crossorigin src="/assets/index.87a7906b.js"></script>
-  <link rel="stylesheet" href="/assets/index.254a344a.css">
 </head>
 
 <body>
@@ -41,7 +39,7 @@
     <div class="toolbar">
 
       <a href="">
-        <img src="data:image/png;base64,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" alt="">
+        <img src="/img/logo/logo-white-trans.png" alt="">
       </a>
 
       <form action="" method="get">
@@ -140,17 +138,17 @@
         </div>
 
         <div class="item">
-          <img src="/assets/PS5.78228f8a.webp" alt="">
+          <img src="/img/icons/carousel-slides/slide_1/PS5.webp" alt="">
           <a href=""><label for="">Playstation Consoles</label></a>
         </div>
 
         <div class="item">
-          <img src="/assets/xbox.b16e4d86.png" alt="">
+          <img src="/img/icons/carousel-slides/slide_1/xbox.png" alt="">
           <a href=""><label for="">Xbox Series Consoles</label></a>
         </div>
 
         <div class="item">
-          <img src="/assets/computer.dcb71fe2.webp" alt="">
+          <img src="/img/icons/carousel-slides/slide_1/computer.webp" alt="">
           <a href=""><label for="">Computers & Accessories</label></a>
         </div>
 
@@ -159,12 +157,12 @@
       <div class="heroSlider" id="slide-2">
 
         <div class="item">
-          <img src="/assets/computer.dcb71fe2.webp" alt="">
+          <img src="/img/icons/carousel-slides/slide_1/computer.webp" alt="">
           <a href=""><label for="">Computers & Accessories</label></a>
         </div>
 
         <div class="item">
-          <img src="/assets/PS5.78228f8a.webp" alt="">
+          <img src="/img/icons/carousel-slides/slide_1/PS5.webp" alt="">
           <a href=""><label for="">Playstation Consoles</label></a>
         </div>
 
@@ -194,8 +192,8 @@
 
   </section>
 
-  
-  
+  <script type="module" src="/js/carousel.js"></script>
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
