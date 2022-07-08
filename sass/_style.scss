@@ -8,7 +8,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
 
     .loader {
         animation: spin 3s ease infinite !important;
@@ -52,7 +52,7 @@
 
     label {
         color: var(--primary);
-        margin-top: 4.5em;
+        margin-top: 4.5em !important;
         font-family: sans-serif;
         font-size: 25px;
         font-variant: small-caps;

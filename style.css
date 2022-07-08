@@ -7,7 +7,7 @@
     grid-template-columns: auto 1fr auto !important;
     grid-template-areas: "logo search tools" !important;
     gap: 1em;
-    padding: 1em !important;
+    padding: 1em;
     place-items: center;
   }
   .toolbar #tools {
@@ -191,7 +191,7 @@
   background-color: white;
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
 }
 .pre-loader .loader {
   -webkit-animation: spin 3s ease infinite !important;
@@ -237,7 +237,7 @@
 }
 .pre-loader label {
   color: var(--primary);
-  margin-top: 4.5em;
+  margin-top: 4.5em !important;
   font-family: sans-serif;
   font-size: 25px;
   font-variant: small-caps;
