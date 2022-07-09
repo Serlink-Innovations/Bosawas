@@ -354,6 +354,13 @@ section.footer {
             font-family: sans-serif;
         }
 
+        @media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+            #footer__item {
+                margin-left: 0 !important;
+            }
+        }
+
+
         #footer__item {
             display: block;
             margin-left: auto;
