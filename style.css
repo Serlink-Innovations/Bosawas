@@ -558,7 +558,7 @@ section.footer div#footer__container {
 }
 section.footer div#footer__container h3 {
   display: block;
-  font-weight: 400;
+  font-weight: bold;
   font-family: sans-serif;
 }
 @media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
