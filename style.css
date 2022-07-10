@@ -617,6 +617,7 @@ section.footer div#footer__container #footer__item a:hover {
 @media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
   section.footer #footer__toolbar {
     flex-direction: column !important;
+    padding-top: 0 !important;
   }
 }
 section.footer #footer__toolbar {
@@ -625,6 +626,7 @@ section.footer #footer__toolbar {
   display: flex;
   gap: 1em;
   justify-content: center;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 section.footer #footer__toolbar select {

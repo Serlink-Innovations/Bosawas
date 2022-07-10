@@ -417,6 +417,7 @@ section.footer {
     @media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
         #footer__toolbar {
             flex-direction: column !important;
+            padding-top: 0 !important;
         }
     }
 
@@ -426,6 +427,7 @@ section.footer {
         display: flex;
         gap: 1em;
         justify-content: center;
+        padding-top: 1em;
         padding-bottom: 1em;
 
         select {
