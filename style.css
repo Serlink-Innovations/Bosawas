@@ -624,8 +624,7 @@ section.footer #footer__toolbar {
   display: flex;
   gap: 1em;
   justify-content: center;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
+  padding-bottom: 1em;
 }
 section.footer #footer__toolbar select {
   width: 150px;
