@@ -434,7 +434,7 @@ section.qualities div.quality {
   background-color: cornflowerblue;
   color: white;
   display: flex;
-  font-size: clamp(0.8em, 3vw, 1.1em);
+  font-size: clamp(1.1em, 5vw, 1em);
   flex-direction: column;
   padding: 1em;
 }
