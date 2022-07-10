@@ -411,9 +411,27 @@ section.footer {
         align-items: center;
         border-top: .1em solid #e8e8e8;
         display: flex;
+        gap: 1em;
         justify-content: center;
         padding-top: .5em;
         padding-bottom: .5em;
+
+        select {
+            width: max-content;
+            height: inherit;
+            border: none;
+            border: 2px solid white;
+            border-radius: .3em;
+            background-color: transparent;
+            color: white;
+            display: block;
+            font-family: sans-serif;
+            padding: .5em 1em;
+
+            option {
+                color: #000000;
+            }
+        }
     }
 
     div.copyright {

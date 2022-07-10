@@ -611,9 +611,27 @@ section.footer #footer__toolbar {
   align-items: center;
   border-top: 0.1em solid #e8e8e8;
   display: flex;
+  gap: 1em;
   justify-content: center;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+}
+section.footer #footer__toolbar select {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: inherit;
+  border: none;
+  border: 2px solid white;
+  border-radius: 0.3em;
+  background-color: transparent;
+  color: white;
+  display: block;
+  font-family: sans-serif;
+  padding: 0.5em 1em;
+}
+section.footer #footer__toolbar select option {
+  color: #000000;
 }
 section.footer div.copyright {
   align-items: center;
