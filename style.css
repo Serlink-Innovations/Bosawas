@@ -556,6 +556,7 @@ section.footer #back-to-top {
   background-color: rgba(100, 149, 237, 0.6);
   display: flex;
   font-family: sans-serif;
+  letter-spacing: 0.15em;
   padding: 1em;
   justify-content: center;
 }
