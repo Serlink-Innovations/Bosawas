@@ -402,7 +402,8 @@ section.footer {
 
             a:hover {
                 text-decoration: underline;
-                text-underline-offset: .2em;
+                text-underline-offset: .3em;
+                text-decoration-thickness: .10em;
             }
         }
     }
@@ -443,7 +444,7 @@ section.footer {
 
     div.copyright {
         align-items: center;
-        background-color: rgba($color: cornflowerblue, $alpha: 0.6);
+        background-color: rgba($color: cornflowerblue, $alpha: 0.4);
         display: flex;
         font-family: sans-serif;
         justify-content: center;
