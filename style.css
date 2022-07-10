@@ -419,7 +419,7 @@ select {
 section.qualities {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  font-size: clamp(0.6em, 3vw, 1em);
+  font-size: clamp(0.9em, 3vw, 1em);
   font-family: sans-serif;
   gap: 1em;
   padding-left: 2em;
