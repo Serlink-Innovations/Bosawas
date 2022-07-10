@@ -615,9 +615,9 @@ section.footer #footer__toolbar {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-
-div.copyright {
+section.footer div.copyright {
   align-items: center;
+  background-color: rgba(100, 149, 237, 0.6);
   display: flex;
   font-family: sans-serif;
   justify-content: center;
