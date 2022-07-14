@@ -156,6 +156,10 @@
     flex-direction: row !important;
     margin: 0.5em !important;
   }
+  .navbar ul#nav li:hover {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
   .navbar ul#nav a {
     padding: 0 !important;
     margin-left: 1em !important;
@@ -163,6 +167,7 @@
   }
   .navbar ul#nav a:hover {
     background-color: transparent !important;
+    font-size: 1em !important;
     text-underline-offset: none !important;
     text-decoration-thickness: none !important;
     transform: none !important;

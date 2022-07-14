@@ -173,6 +173,11 @@
             flex-direction: row !important;
             margin: .5em !important;
 
+            li:hover {
+                border-top: none !important;
+                border-bottom: none !important;
+            }
+
             a {
                 padding: 0 !important;
                 margin-left: 1em !important;
@@ -181,6 +186,7 @@
 
             a:hover {
                 background-color: transparent !important;
+                font-size: 1em !important;
                 text-underline-offset: none !important;
                 text-decoration-thickness: none !important;
                 transform: none !important;
