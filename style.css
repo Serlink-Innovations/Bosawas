@@ -365,6 +365,16 @@ select {
   min-height: 100vh !important;
 }
 
+@media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+  .stickyHeader {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  .stickyHeader + .hero {
+    padding-top: 102px;
+  }
+}
 .display {
   display: block;
   font-family: sans-serif;

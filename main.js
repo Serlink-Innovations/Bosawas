@@ -15,6 +15,22 @@ function mobileSwitch() {
 }
 toggle.addEventListener('click', mobileSwitch);
 
+//Mobile HeaderFixed function
+const header = document.getElementsByClassName('header-main')[0];
+const stickyHeader = header.offSetTop;
+
+window.onscroll = function () {
+    fixedMenu()
+};
+
+function fixedMenu() {
+    if (window.pageYOffset) {
+        header.classList.add("stickyHeader")
+    } else {
+        header.classList.remove("stickyHeader");
+    }
+}
+
 //Page Back to Top
 const backToTop = document.getElementById('back-to-top');
 
