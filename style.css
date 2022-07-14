@@ -153,6 +153,7 @@
     width: auto !important;
     align-items: center;
     display: flex !important;
+    flex-direction: row !important;
     margin: 0.5em;
   }
   .navbar ul#nav a {
