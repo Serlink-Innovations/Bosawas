@@ -618,13 +618,21 @@ section.footer #back-to-top:hover {
   cursor: pointer;
   font-weight: bold;
 }
+@media only screen and (max-width: 600px) and (max-width: 768px) and (max-width: 998px) {
+  section.footer div#footer__container {
+    flex-direction: column !important;
+    gap: 1em !important;
+  }
+}
 section.footer div#footer__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-top: 3em;
-  padding-bottom: 3em;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  padding-bottom: 2em;
   padding-left: 2em;
   padding-right: 2em;
+  gap: 4em;
+  justify-content: center;
 }
 section.footer div#footer__container h3 {
   display: block;
@@ -638,8 +646,6 @@ section.footer div#footer__container h3 {
 }
 section.footer div#footer__container #footer__item {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: auto;
   margin-top: 0;
 }
