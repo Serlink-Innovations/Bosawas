@@ -234,6 +234,7 @@
   display: flex;
   justify-content: center;
   position: fixed;
+  z-index: 9999999;
 }
 .pre-loader .loader {
   -webkit-animation: spin 3s ease infinite !important;
