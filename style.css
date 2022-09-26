@@ -580,8 +580,10 @@ section.product-catergories #product-catergories__item img {
   width: 7em;
   height: 7em;
   background-color: var(--primary);
-  border: 0.4em solid cornflowerblue;
+  border: 0.3em solid cornflowerblue;
   border-radius: 100vmax;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.product-catergories #product-catergories__item label {
   display: block;

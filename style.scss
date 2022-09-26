@@ -328,8 +328,9 @@ section.product-catergories {
             width: 7em;
             height: 7em;
             background-color: var(--primary);
-            border: .4em solid cornflowerblue;
+            border: .3em solid cornflowerblue;
             border-radius: 100vmax;
+            object-fit: cover;
         }
 
         label {
